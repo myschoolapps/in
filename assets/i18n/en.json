@@ -15,6 +15,9 @@
     "phone":"phone",
     "type":"type",
     "create":"create",
-    "delete":"delete"
-
+    "delete":"delete",
+    "OneSystemOneLogin_Total_Control": "One System. One Login. Total Control.",
+    "ChooseYourSchool_toLogin":"Choose Your School to Login",
+    "Intro_page":"Give your staff the gift of time. Say goodbye to separate software for student data, school management, and parents. MySchool is an integrated SIS, SMS, and LMS platform designed to digitize and optimize all admin and operations in educational institutions.",
+    "selectSchool":"Select a School"
 }
