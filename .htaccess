@@ -1,0 +1,22 @@
+# found at http://wordpress.org/support/topic/301-htaccess
+
+# canonical redirect to no www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# protect wpconfig at all cost
+<files wp-config.php>
+Order deny,allow
+deny from all
+</files>
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
